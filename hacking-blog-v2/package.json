@@ -1,0 +1,53 @@
+{
+  "name": "ethical-hacking-blog",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Modern Ethical Hacking Blog with Next.js 15, TypeScript & TailwindCSS",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "next": "^15.3.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "lucide-react": "^0.475.0",
+    "gray-matter": "^4.0.3",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "rehype-prism-plus": "^2.0.0",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.50",
+    "@types/react": "^18.3.22",
+    "@types/react-dom": "^18.3.7",
+    "typescript": "^5.8.3",
+    "tailwindcss": "^3.4.17",
+    "postcss": "^8.5.3",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.27.0",
+    "eslint-config-next": "15.1.7",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "bun": ">=1.0.0"
+  },
+  "keywords": [
+    "ethical-hacking",
+    "cybersecurity",
+    "nextjs",
+    "typescript",
+    "tailwindcss",
+    "blog"
+  ],
+  "author": "MiniMax Agent",
+  "license": "MIT"
+}
