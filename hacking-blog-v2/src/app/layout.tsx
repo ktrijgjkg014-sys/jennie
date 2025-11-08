@@ -7,14 +7,16 @@ import { Footer } from '@/components/footer'
 
 const inter = Inter({ 
   subsets: ['latin'],
-  variable: '--font-geist-sans',
   display: 'swap',
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
+  style: ['normal', 'italic'],
+  variable: '--font-inter',
 })
 
 const jetbrainsMono = JetBrains_Mono({ 
   subsets: ['latin'],
-  variable: '--font-geist-mono',
   display: 'swap',
+  variable: '--font-mono',
 })
 
 export const metadata: Metadata = {
@@ -85,9 +87,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="relative flex min-h-screen flex-col cyber-grid">
+          <div className="relative flex min-h-screen flex-col bg-background tech-grid">
             <Header />
-            <main className="flex-1">
+            <main className="flex-1 relative z-10">
               {children}
             </main>
             <Footer />

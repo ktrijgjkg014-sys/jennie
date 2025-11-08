@@ -1,14 +1,18 @@
 {
-  "name": "ethical-hacking-blog",
+  "name": "ethical-hacking-blog-v2",
   "version": "2.0.0",
   "private": true,
-  "description": "Modern Ethical Hacking Blog with Next.js 15, TypeScript & TailwindCSS",
+  "description": "Modern Ethical Hacking Blog with VIP content, comments system, view tracking & premium features. Built with Next.js 15, TypeScript & TailwindCSS",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --port 3000",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "type-check": "tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "clean": "rm -rf .next out dist",
+    "analyze": "cross-env ANALYZE=true next build",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -21,7 +25,9 @@
     "remark-gfm": "^4.0.1",
     "rehype-prism-plus": "^2.0.0",
     "clsx": "^2.1.1",
-    "tailwind-merge": "^3.3.0"
+    "tailwind-merge": "^3.3.0",
+    "class-variance-authority": "^0.7.1",
+    "next-themes": "^0.3.0"
   },
   "devDependencies": {
     "@types/node": "^20.17.50",
@@ -33,12 +39,15 @@
     "autoprefixer": "^10.4.21",
     "eslint": "^9.27.0",
     "eslint-config-next": "15.1.7",
+    "prettier": "^3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.9",
     "husky": "^9.1.7",
-    "lint-staged": "^15.4.3"
+    "lint-staged": "^15.4.3",
+    "cross-env": "^7.0.3"
   },
   "engines": {
     "node": ">=18.0.0",
-    "bun": ">=1.0.0"
+    "npm": ">=9.0.0"
   },
   "keywords": [
     "ethical-hacking",
@@ -46,8 +55,20 @@
     "nextjs",
     "typescript",
     "tailwindcss",
-    "blog"
+    "vip",
+    "premium",
+    "blog",
+    "tutoriales",
+    "penetration-testing"
   ],
   "author": "MiniMax Agent",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/ethical-hacking-blog-v2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/ethical-hacking-blog-v2/issues"
+  },
+  "homepage": "https://yourusername.github.io/ethical-hacking-blog-v2"
 }
